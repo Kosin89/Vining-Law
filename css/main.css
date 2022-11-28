@@ -13,7 +13,447 @@ html {
 }
 
 body {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
+  color: #2c2b32;
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
+}
+
+nav {
+  border-bottom: 1px solid #e0e2ef;
+}
+nav .navbar-nav {
+  margin: 2rem;
+}
+nav .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.5rem 0;
+  color: #0d1321;
+}
+
+.home .home-text {
+  max-width: 50rem;
+  margin: 12rem auto 0;
+}
+.home .home-top-text {
+  font-family: "DM Serif Text", serif;
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+.home .home-main-text {
+  font-family: "DM Serif Text", serif;
+  font-size: 6rem;
+}
+.home .home-under-text {
+  margin: 6rem auto;
+  line-height: 2.9rem;
+}
+.home .home-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .home-btns a {
+  text-decoration: none;
+  padding: 2rem;
+  font-size: 1.4rem;
+}
+.home .home-btns .btn-contact {
+  color: white;
+  background-color: #d1ab6f;
+  margin-right: 0.3rem;
+}
+.home .home-btns .btn-portfolio {
+  color: #0d1321;
+  margin-left: 0.3rem;
+}
+.home .home-photo-box {
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .home-photo-box .home-photo {
+  background-color: #c2c0c0;
+  width: 500px;
+}
+.home img {
+  width: 300px;
+}
+.home .statistics {
+  margin: 8rem 0.75rem 0 0.75rem;
+  background-color: #fff;
+}
+.home .statistics .statistic {
+  padding: 4rem;
+}
+.home .statistics .statistic .statistic-number {
+  font-family: "DM Serif Text", serif;
+  font-size: 4.6rem;
+}
+.home .statistics .statistic .statistic-number .sign {
+  color: #d1ab6f;
+}
+
+.choose .after-section {
+  font-size: 1.4rem;
+  color: #d1ab6f;
+  margin: 8rem 0 0 0;
+}
+.choose .underline {
+  height: 2px;
+  width: 60px;
+  background-color: #d1ab6f;
+  margin-bottom: 1.8rem;
+}
+.choose .choose-main-text {
+  font-family: "DM Serif Text", serif;
+  font-size: 3.6rem;
+  max-width: 300px;
+  margin-bottom: 3.4rem;
+}
+.choose .choose-heading {
+  font-family: "DM Serif Text", serif;
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+.choose .choose-text {
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+  max-width: 500px;
+}
+.choose img {
+  width: 300px;
+}
+
+.practice .practice-upper .after-section {
+  font-size: 1.4rem;
+  color: #d1ab6f;
+  margin: 8rem 0 0 0;
+}
+.practice .practice-upper .underline {
+  height: 2px;
+  width: 91px;
+  background-color: #d1ab6f;
+  margin-bottom: 1.8rem;
+}
+.practice .practice-upper .practice-main-text {
+  font-family: "DM Serif Text", serif;
+  font-size: 3.6rem;
+  max-width: 350px;
+  margin-bottom: 3.4rem;
+}
+.practice .practice-under-text {
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+.practice .practice-card {
+  background-color: white;
+  margin: 1rem 0rem;
+}
+.practice img {
+  -webkit-transition: scale 0.5s;
+  transition: scale 0.5s;
+  width: 100px;
+  padding: 1rem;
+  margin: 2rem;
+}
+.practice .practice-card-head {
+  font-family: "DM Serif Text", serif;
+  font-size: 2rem;
+}
+.practice .practice-underline {
+  margin: 1rem auto;
+  width: 40px;
+  height: 2px;
+  background-color: #d1ab6f;
+}
+.practice .practice-card-text {
+  margin: 0 auto;
+  max-width: 300px;
+  font-size: 1.4rem;
+  line-height: 24px;
+  padding-bottom: 4rem;
+}
+.practice .practice-card:hover img {
+  scale: 1.2;
+}
+
+.aboutme {
+  margin: 6rem 0;
+}
+.aboutme .aboutme-text {
+  padding: 0 0.75rem;
+}
+.aboutme .aboutme-main {
+  background-color: #fff;
+  padding: 8rem 0;
+  max-width: 500px;
+}
+.aboutme .aboutme-main .after-section {
+  font-size: 1.4rem;
+  color: #d1ab6f;
+}
+.aboutme .aboutme-main .underline {
+  height: 2px;
+  width: 72px;
+  background-color: #d1ab6f;
+  margin-bottom: 1.8rem;
+}
+.aboutme .aboutme-main .aboutme-main-text {
+  font-family: "DM Serif Text", serif;
+  font-size: 3.6rem;
+  max-width: 350px;
+  margin-bottom: 3.4rem;
+}
+.aboutme .aboutme-main .aboutme-under-text {
+  font-size: 1.4rem;
+  line-height: 24px;
+  margin-bottom: 3rem;
+}
+.aboutme .aboutme-photo {
+  text-align: center;
+}
+.aboutme .aboutme-photo img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact {
+  margin: 4rem 0.75rem;
+}
+.contact .after-section {
+  font-size: 1.4rem;
+  color: #d1ab6f;
+}
+.contact .underline {
+  height: 2px;
+  width: 118px;
+  background-color: #d1ab6f;
+  margin-bottom: 1.8rem;
+}
+.contact .contact-main-text {
+  font-family: "DM Serif Text", serif;
+  font-size: 3.6rem;
+  max-width: 350px;
+  margin-bottom: 3.4rem;
+}
+.contact .contact-info {
+  margin-top: 0.3rem;
+}
+.contact i {
+  color: #d1ab6f;
+  font-size: 2rem;
+  margin-right: 1.6rem;
+}
+.contact .contact-send-box .contact-form-box {
+  margin-top: 3rem;
+  padding: 10rem 0;
+  background-color: #fff;
+}
+.contact .contact-send-box .contact-form {
+  padding: 0 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact .contact-send-box .contact-text-area {
+  margin: 1.5rem 0;
+  border: transparent;
+  border-bottom: 2px solid black;
+}
+.contact .contact-send-box .contact-btn {
+  border: 2px solid black;
+  background-color: transparent;
+  padding: 1rem;
+  width: 8rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .home .home-main-text {
+    font-size: 6.4rem;
+  }
+  .home .home-btns .btn-contact {
+    margin-right: 1rem;
+  }
+  .home .home-btns .btn-portfolio {
+    margin-left: 1rem;
+  }
+  .home .home-btns a {
+    font-size: 1.6rem;
+  }
+  .aboutme .aboutme-main {
+    padding: 8rem 4rem;
+  }
+}
+@media (min-width: 768px) {
+  .home .statistics {
+    margin: 10rem 0.75rem 0 0.75rem;
+  }
+  .home .statistics .statistic {
+    padding: 4rem;
+  }
+  .home .statistics .statistic .statistic-number {
+    font-size: 5.2rem;
+  }
+  .home .statistics .one,
+.home .statistics .two {
+    padding-top: 8rem;
+  }
+  .home .statistics .three,
+.home .statistics .four {
+    padding-bottom: 8rem;
+  }
+  .choose .choose-box {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .choose img {
+    margin-top: 23rem;
+    -webkit-box-ordinal-group: -4;
+        -ms-flex-order: -5;
+            order: -5;
+  }
+  .practice .practice-main {
+    margin: 0;
+    padding: 0;
+  }
+  .practice .practice-text-box {
+    margin: 0;
+  }
+  .practice .practice-under-text {
+    margin-top: 12rem;
+  }
+  .contact .contact-send-box .contact-form-box {
+    margin-top: 0rem;
+  }
+}
+@media (min-width: 992px) {
+  nav .nav-link {
+    margin: 0 2rem;
+  }
+  .home .home-text {
+    margin-top: 17rem;
+  }
+  .home .home-btns {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .home img {
+    width: 400px;
+  }
+  .choose {
+    margin: 4rem 0.75rem;
+  }
+  .choose img {
+    margin-top: 17rem;
+    width: 350px;
+  }
+  .choose .choose-text {
+    max-width: 450px;
+  }
+  .aboutme-box {
+    margin: 0 auto;
+    left: 16.5rem;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/img/photo/aboutme-photo.jpg");
+    height: 700px;
+    max-width: 600px;
+  }
+  .aboutme-box .aboutme-main {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 9rem;
+    left: -33rem;
+  }
+  .aboutme-box img {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .home .home-text {
+    margin-top: 20rem;
+  }
+  .home .home-main {
+    padding-left: 7rem;
+  }
+  .home img {
+    width: 450px;
+  }
+  .home .statistics {
+    margin: 0rem 0.75rem 0 0.75rem;
+  }
+  .home .statistics .statistic {
+    padding: 8rem;
+  }
+  .choose img {
+    margin-top: 13rem;
+    width: 350px;
+  }
+  .choose .choose-text {
+    max-width: 550px;
+  }
+  .practice .practice-upper {
+    padding-left: 7rem;
+  }
+  .practice .practice-under-text {
+    max-width: 700px;
+  }
+  .aboutme {
+    margin: 8rem 0;
+  }
+  .aboutme-box {
+    left: 15.5rem;
+    position: relative;
+    max-width: 800px;
+  }
+  .aboutme-box .aboutme-main {
+    left: -31rem;
+  }
+  .contact {
+    padding-right: 1rem;
+  }
+  .contact .contact-info-box {
+    padding-left: 8rem;
+  }
+}
+@media (min-width: 1400px) {
+  .home .home-text {
+    margin: 20rem 0 0 0;
+  }
+  .practice .practice-under-text {
+    max-width: 560px;
+  }
+  .aboutme-box {
+    left: 24.5rem;
+  }
+  .aboutme-box .aboutme-main {
+    left: -43rem;
+  }
 }/*# sourceMappingURL=main.css.map */
