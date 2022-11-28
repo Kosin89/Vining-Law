@@ -330,6 +330,37 @@ nav {
 	}
 }
 
+.footer {
+	background-color: rgba(44, 43, 50, 1);
+	color: rgba(242, 244, 245, 1);
+	padding: 2rem 0;
+
+	.footer-logo {
+		padding: 2rem;
+	}
+
+	.footer-link {
+		display: flex;
+		flex-direction: column;
+		text-decoration: none;
+		padding: 1rem;
+		font-size: 1.4rem;
+		color: rgba(242, 244, 245, 1);
+	}
+
+	.footer-underline {
+		margin: 2rem;
+		height: 1px;
+		width: 95%;
+		background-color: rgba(242, 244, 245, 1);
+	}
+
+	.footer-year {
+		font-size: 1.4rem;
+		padding: 1rem 2rem 2rem 2rem;
+	}
+}
+
 // MEDIA
 
 @media (min-width: 576px) {
@@ -417,6 +448,14 @@ nav {
 			.contact-form-box {
 				margin-top: 0rem;
 			}
+		}
+	}
+
+	.footer {
+
+		.footer-links {
+			display: flex;
+			justify-content: space-evenly;
 		}
 	}
 }
@@ -556,12 +595,11 @@ nav {
 		}
 	}
 
-	.aboutme-box {		
-		left: 24.5rem;		
+	.aboutme-box {
+		left: 24.5rem;
 
-		.aboutme-main {			
+		.aboutme-main {
 			left: -43rem;
 		}
-
 	}
 }
