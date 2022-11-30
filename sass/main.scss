@@ -34,7 +34,8 @@ nav {
 	}
 }
 
-.home {
+.home {	
+
 	.home-text {
 		max-width: 50rem;
 		margin: 12rem auto 0;
@@ -500,7 +501,7 @@ nav {
 		position: relative;
 		background-size: cover;
 		background-position: center;
-		background-image: url("/img/photo/aboutme-photo-2.jpg");
+		background-image: url("./img/photo/aboutme-photo-2.jpg");
 		height: 700px;
 		max-width: 600px;
 
