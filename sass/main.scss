@@ -34,8 +34,7 @@ nav {
 	}
 }
 
-.home {	
-
+.home {
 	.home-text {
 		max-width: 50rem;
 		margin: 12rem auto 0;
@@ -453,7 +452,6 @@ nav {
 	}
 
 	.footer {
-
 		.footer-links {
 			display: flex;
 			justify-content: space-evenly;
@@ -495,25 +493,27 @@ nav {
 		}
 	}
 
-	.aboutme-box {
-		margin: 0 auto;
-		left: 17rem;
-		position: relative;
-		background-size: cover;
-		background-position: center;
-		background-image: url("./img/photo/aboutme-photo-2.jpg");
-		height: 700px;
-		max-width: 600px;
-
-		.aboutme-main {
-			background-color: rgba(255, 255, 255, 0.8);
-			position: absolute;
-			top: 9rem;
-			left: -33rem;
-		}
-
-		img {
-			display: none;
+	.aboutme {
+		.aboutme-box {
+			margin: 0 auto;
+			left: 17rem;
+			position: relative;
+			background-size: cover;
+			background-position: center;
+			background-image: url("/img/photo/aboutme-photo-2.jpg");
+			height: 700px;
+			max-width: 600px;
+	
+			.aboutme-main {
+				background-color: rgba(255, 255, 255, 0.8);
+				position: absolute;
+				top: 9rem;
+				left: -33rem;
+			}
+	
+			img {
+				display: none;				
+			}
 		}
 	}
 }
