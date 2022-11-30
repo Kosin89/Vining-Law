@@ -416,7 +416,7 @@ nav .nav-link {
   .choose .choose-text {
     max-width: 450px;
   }
-  .aboutme .aboutme-box {
+  .aboutme-box {
     margin: 0 auto;
     left: 17rem;
     position: relative;
@@ -426,13 +426,13 @@ nav .nav-link {
     height: 700px;
     max-width: 600px;
   }
-  .aboutme .aboutme-box .aboutme-main {
+  .aboutme-box .aboutme-main {
     background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
     top: 9rem;
     left: -33rem;
   }
-  .aboutme .aboutme-box img {
+  .aboutme-box img {
     display: none;
   }
 }
