@@ -176,6 +176,7 @@ nav {
 }
 
 .practice {
+
 	.practice-upper {
 		.after-section {
 			font-size: 1.4rem;
@@ -207,7 +208,7 @@ nav {
 	.practice-card {
 		background-color: white;
 		margin: 1rem 0rem;
-		padding: 0 1rem;
+		padding: 0;		
 	}
 
 	img {
@@ -220,6 +221,8 @@ nav {
 	.practice-card-head {
 		font-family: "DM Serif Text", serif;
 		font-size: 2rem;
+		color:#2C2B32;
+		;
 	}
 
 	.practice-underline {
@@ -365,6 +368,7 @@ nav {
 		}
 
 		.contact-btn {
+			margin-left: auto;
 			border: 2px solid black;
 			background-color: transparent;
 			padding: 1rem;
@@ -495,7 +499,7 @@ nav {
 			flex-direction: column;
 			align-items: center;
 			justify-content: flex-start;
-			min-height: 330px;
+			min-height: 365px;
 		}
 
 		.practice-text-box {
