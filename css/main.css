@@ -23,7 +23,8 @@ nav {
   border-bottom: 1px solid #e0e2ef;
 }
 nav .navbar-nav {
-  margin: 2rem;
+  margin: 0 auto;
+  max-width: 300px;
 }
 nav .nav-link {
   display: -webkit-box;
@@ -34,9 +35,24 @@ nav .nav-link {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0.5rem 0;
+  padding: 2rem;
   color: #0d1321;
 }
+nav .nav-link:first-child img {
+  margin-right: 1rem;
+}
+nav .nav-link:last-child {
+  display: none;
+  color: white;
+  background-color: #d1ab6f;
+}
+nav .nav-link:last-child:hover {
+  background-color: #e6c184;
+}
 
+.home .home-wrapper {
+  margin-bottom: 12rem;
+}
 .home .home-text {
   max-width: 50rem;
   margin: 12rem auto 0;
@@ -71,13 +87,23 @@ nav .nav-link {
   color: white;
   background-color: #d1ab6f;
   margin-right: 0.3rem;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+.home .home-btns .btn-contact:hover {
+  background-color: #e6c184;
 }
 .home .home-btns .btn-portfolio {
   color: #0d1321;
   margin-left: 0.3rem;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
+.home .home-btns .btn-portfolio:hover {
+  color: #d1ab6f;
 }
 .home .home-photo-box {
-  margin-top: 6rem;
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,15 +111,11 @@ nav .nav-link {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.home .home-photo-box .home-photo {
-  background-color: #c2c0c0;
-  width: 500px;
-}
 .home img {
-  width: 300px;
+  width: 100%;
 }
 .home .statistics {
-  margin: 8rem 0.75rem 0 0.75rem;
+  margin: 12rem 0.75rem 0 0.75rem;
   background-color: #fff;
 }
 .home .statistics .statistic {
@@ -135,8 +157,8 @@ nav .nav-link {
   margin-bottom: 3rem;
   max-width: 500px;
 }
-.choose img {
-  width: 300px;
+.choose .choose-photo img {
+  width: 100%;
 }
 
 .practice .practice-upper .after-section {
@@ -164,6 +186,7 @@ nav .nav-link {
 .practice .practice-card {
   background-color: white;
   margin: 1rem 0rem;
+  padding: 0 1rem;
 }
 .practice img {
   -webkit-transition: scale 0.5s;
@@ -192,6 +215,23 @@ nav .nav-link {
 .practice .practice-card:hover img {
   scale: 1.2;
 }
+.practice .practice-btn {
+  margin-top: 40px;
+}
+.practice .btn-contact {
+  color: white;
+  background-color: #d1ab6f;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+.practice .btn-contact:hover {
+  background-color: #e6c184;
+}
+.practice a {
+  text-decoration: none;
+  padding: 2rem;
+  font-size: 1.4rem;
+}
 
 .aboutme {
   margin: 6rem 0;
@@ -201,29 +241,33 @@ nav .nav-link {
 }
 .aboutme .aboutme-main {
   background-color: #fff;
-  padding: 8rem 0;
+  padding: 4rem 2rem;
   max-width: 500px;
 }
 .aboutme .aboutme-main .after-section {
   font-size: 1.4rem;
   color: #d1ab6f;
+  margin: 0rem 0 0 0;
 }
 .aboutme .aboutme-main .underline {
   height: 2px;
-  width: 72px;
+  width: 118px;
   background-color: #d1ab6f;
   margin-bottom: 1.8rem;
 }
 .aboutme .aboutme-main .aboutme-main-text {
   font-family: "DM Serif Text", serif;
   font-size: 3.6rem;
-  max-width: 350px;
+  max-width: 400px;
   margin-bottom: 3.4rem;
 }
 .aboutme .aboutme-main .aboutme-under-text {
   font-size: 1.4rem;
   line-height: 24px;
   margin-bottom: 3rem;
+}
+.aboutme .aboutme-main .aboutme-under-text:last-child {
+  margin-bottom: 0;
 }
 .aboutme .aboutme-photo {
   text-align: center;
@@ -323,6 +367,25 @@ nav .nav-link {
   padding: 1rem 2rem 2rem 2rem;
 }
 
+@media (max-width: 330px) {
+  .home .home-main-text {
+    font-size: 5.8rem;
+  }
+}
+@media (max-width: 400px) {
+  .home .home-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 @media (min-width: 576px) {
   .home .home-main-text {
     font-size: 6.4rem;
@@ -335,9 +398,6 @@ nav .nav-link {
   }
   .home .home-btns a {
     font-size: 1.6rem;
-  }
-  .aboutme .aboutme-main {
-    padding: 8rem 4rem;
   }
 }
 @media (min-width: 768px) {
@@ -364,7 +424,7 @@ nav .nav-link {
             order: 5;
   }
   .choose img {
-    margin-top: 23rem;
+    margin-top: 25rem;
     -webkit-box-ordinal-group: -4;
         -ms-flex-order: -5;
             order: -5;
@@ -373,14 +433,49 @@ nav .nav-link {
     margin: 0;
     padding: 0;
   }
+  .practice .practice-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    min-height: 330px;
+  }
   .practice .practice-text-box {
     margin: 0;
   }
   .practice .practice-under-text {
     margin-top: 12rem;
   }
+  .practice .practice-btn {
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .contact .contact-send-box .contact-form-box {
     margin-top: 0rem;
+  }
+  .footer .footer-logo {
+    margin-bottom: 1rem;
   }
   .footer .footer-links {
     display: -webkit-box;
@@ -392,8 +487,16 @@ nav .nav-link {
   }
 }
 @media (min-width: 992px) {
+  nav .navbar-nav {
+    margin: 0;
+    max-width: 100%;
+  }
   nav .nav-link {
-    margin: 0 2rem;
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  nav .nav-link:last-child {
+    width: 130px;
   }
   .home .home-text {
     margin-top: 17rem;
@@ -407,11 +510,10 @@ nav .nav-link {
     width: 400px;
   }
   .choose {
-    margin: 4rem 0.75rem;
+    margin: 4rem 0.75rem 1rem;
   }
-  .choose img {
-    margin-top: 17rem;
-    width: 350px;
+  .choose .choose-photo {
+    padding-right: 40px;
   }
   .choose .choose-text {
     max-width: 450px;
@@ -423,17 +525,22 @@ nav .nav-link {
     background-size: cover;
     background-position: center;
     background-image: url(../img/photo/aboutme-photo-2.jpg);
-    height: 700px;
+    height: 800px;
     max-width: 600px;
   }
   .aboutme-box .aboutme-main {
     background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
-    top: 9rem;
+    top: 4rem;
     left: -33rem;
   }
   .aboutme-box img {
     display: none;
+  }
+  .practice .practice-btn {
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 1200px) {
@@ -454,10 +561,9 @@ nav .nav-link {
   }
   .choose img {
     margin-top: 13rem;
-    width: 350px;
   }
   .choose .choose-text {
-    max-width: 550px;
+    max-width: 100%;
   }
   .practice .practice-upper {
     padding-left: 7rem;
@@ -490,10 +596,19 @@ nav .nav-link {
   .practice .practice-under-text {
     max-width: 560px;
   }
+  .choose img {
+    max-width: 520px;
+  }
+  .choose .choose-text {
+    max-width: 100%;
+  }
   .aboutme-box {
     left: 24.5rem;
   }
   .aboutme-box .aboutme-main {
-    left: -43rem;
+    padding: 5rem;
+    top: 5.5rem;
+    left: -49rem;
+    max-width: 650px;
   }
 }/*# sourceMappingURL=main.css.map */
