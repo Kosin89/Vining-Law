@@ -18,12 +18,13 @@
 
 		.contact-form-box {
 			padding: 0;
+			
+			.contact-form {
+				margin: 0;
+				padding: 0;
+			}
 		}
 
-		.contact-form {
-			margin: 0;
-			padding: 0;
-		}
 	}
 }
 
